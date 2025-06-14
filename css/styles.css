@@ -1098,11 +1098,9 @@ textarea::placeholder {
 }
 
 .chek-element-text {
-  .chek-element-text {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 231px;
-  }
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 231px;
 }
 
 .modal-chek:checked + .chek-text .chek-element {
