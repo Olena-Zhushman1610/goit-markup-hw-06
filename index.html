@@ -206,7 +206,12 @@
           <h2 class="two-title">Our Team</h2>
           <ul class="two-two-list">
             <li class="two-list">
-              <img src="./images/img1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/img1.jpg 1x, ./images/img12xmin.jpg 2x"
+                src="./images/img1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="two-container">
                 <h3 class="one-subtitle twoh">Mark Guerrero</h3>
                 <p class="one-text twop">Product Designer</p>
@@ -243,7 +248,12 @@
               </div>
             </li>
             <li class="two-list">
-              <img src="./images/img2.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x-min.jpg 2x"
+                src="./images/img2.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="two-container">
                 <h3 class="one-subtitle twoh">Tom Ford</h3>
                 <p class="one-text twop">Frontend Developer</p>
@@ -280,7 +290,12 @@
               </div>
             </li>
             <li class="two-list">
-              <img src="./images/img3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x-min.jpg 2x"
+                src="./images/img3.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="two-container">
                 <h3 class="one-subtitle twoh">Camila Garcia</h3>
                 <p class="one-text twop">Marketing</p>
@@ -317,7 +332,12 @@
               </div>
             </li>
             <li class="two-list">
-              <img src="./images/img4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/img4.jpg 1x, ./images/img4-2x-min.jpg 2x"
+                src="./images/img4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="two-container">
                 <h3 class="one-subtitle twoh">Daniel Wilson</h3>
                 <p class="one-text twop">UI Designer</p>
@@ -356,13 +376,37 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="three sections">
+      <section class="three sections">
         <div class="container">
           <h2 class="two-title">Our Portfolio</h2>
           <ul class="three-three-list">
             <li class="three-list">
               <div class="cartka">
-                <img src="./images/img11.jpg" alt="Banking" width="360" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img11.jpg              1x,
+                      ./images/card-1-desk-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card1tab1x-min.jpg    1x,
+                      ./images/card-1-tab-2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card1mob1x-min.jpg 1x,
+                      ./images/card1mob2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/img11.jpg" alt="Banking" width="360" />
+                </picture>
+
                 <p class="cartka-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -371,16 +415,40 @@
               </div>
               <div class="three-container">
                 <h3 class="one-subtitle threeh">Banking App</h3>
-                <p class="one-text">App</p>
+                <p class="one-text threet">App</p>
               </div>
             </li>
             <li class="three-list">
               <div class="cartka">
-                <img
-                  src="./images/img22.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img22.jpg              1x,
+                      ./images/card-2-desk-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card-2-tab-1x-min.jpg 1x,
+                      ./images/card-2-tab-2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card2mob1x-min.jpg 1x,
+                      ./images/card2mob2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img22.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="cartka-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -389,16 +457,40 @@
               </div>
               <div class="three-container">
                 <h3 class="one-subtitle threeh">Cashless Payment</h3>
-                <p class="one-text">Marketing</p>
+                <p class="one-text threet">Marketing</p>
               </div>
             </li>
             <li class="three-list">
               <div class="cartka">
-                <img
-                  src="./images/img33.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img33.jpg              1x,
+                      ./images/card-3-desk-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card-3-tab-1x-min.jpg 1x,
+                      ./images/card-3-tab-2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card3mob1x-min.jpg 1x,
+                      ./images/card3mob2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img33.jpg"
+                    alt="Meditation App"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="cartka-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -407,12 +499,41 @@
               </div>
               <div class="three-container">
                 <h3 class="one-subtitle threeh">Meditation App</h3>
-                <p class="one-text">App</p>
+                <p class="one-text threet">App</p>
               </div>
             </li>
             <li class="three-list">
               <div class="cartka">
-                <img src="./images/img44.jpg" alt="Taxi Service" width="360" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img44.jpg              1x,
+                      ./images/card-4-desk-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card-4-tab-1x-min.jpg 1x,
+                      ./images/card-4-tab-2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card4mob1x-min.jpg 1x,
+                      ./images/card4mob2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/img44.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="cartka-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -421,16 +542,41 @@
               </div>
               <div class="three-container">
                 <h3 class="one-subtitle threeh">Taxi Service</h3>
-                <p class="one-text">Marketing</p>
+                <p class="one-text threet">Marketing</p>
               </div>
             </li>
             <li class="three-list">
               <div class="cartka">
-                <img
-                  src="./images/img55.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img55.jpg              1x,
+                      ./images/card-5-desk-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card-5-tab-1x-min.jpg 1x,
+                      ./images/card-5-tab-2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card5mob1x-min.jpg 1x,
+                      ./images/card5mob2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/img55.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="cartka-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -439,16 +585,41 @@
               </div>
               <div class="three-container">
                 <h3 class="one-subtitle threeh">Screen Illustrations</h3>
-                <p class="one-text">Design</p>
+                <p class="one-text threet">Design</p>
               </div>
             </li>
             <li class="three-list">
               <div class="cartka">
-                <img
-                  src="./images/img66.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img66.jpg              1x,
+                      ./images/card-6-desk-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card-6-tab-1x-min.jpg 1x,
+                      ./images/card-6-tab-2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card6mob1x-min.jpg 1x,
+                      ./images/card6mob2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/img66.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="cartka-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -457,14 +628,14 @@
               </div>
               <div class="three-container">
                 <h3 class="one-subtitle threeh">Online Courses</h3>
-                <p class="one-text">Marketing</p>
+                <p class="one-text threet">Marketing</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="page-footer sections">
+    <footer class="page-footer sections">
       <div class="container footer-container">
         <div class="container-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -475,7 +646,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="social-media-container">
           <p class="media-text">Social media</p>
           <ul class="icon-list tofooter">
             <li class="icon-item">
@@ -528,7 +699,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
