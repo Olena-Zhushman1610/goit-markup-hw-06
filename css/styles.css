@@ -902,6 +902,10 @@ img {
   .footer-container-to-form {
     margin-left: auto;
   }
+
+  .social-media-container {
+    margin: 0;
+  }
 }
 
 /* ----modal--- */
